@@ -30,8 +30,8 @@ const draw = (ctx: any, frameCount: number, elapsedTime: any) => {
   ctx.fillStyle = 'rgb(255,255,255';
   ctx.fillRect(start, start, width*numBoxes+2, height*numRows+2);
   ctx.fillStyle = 'rgb(0,0,255';
-  for (var row=0; row<numRows; row++) {
-    for (var i=0; i<numBoxes; i++) {
+  for (let row=0; row<numRows; row++) {
+    for (let i=0; i<numBoxes; i++) {
       if (filledBoxes.indexOf(i) !== -1) {
           ctx.fillRect((i*width)+start+2, (row*height)+start+2, width, height);
       }
